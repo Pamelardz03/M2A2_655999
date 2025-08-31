@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <link rel="stylesheet" href="estilo.css">
+    <title>Torneo de VideoJuegos</title>
+
+
+</head>
+
+<body style="background-color: #7A1A27;
+            background-image: url('imagenes/videojuegos2.jpeg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-blend-mode: multiply;">
+
+    <div>
+        <h1>INSCRIPCION TORNEO!</h1>
+    </div>
+    <div>
+        <p>Ingresa la siguiente informacion (<span style="color: rgb(227, 18, 18)">*</span>obligatoria)</p>
+    </div>
+    <div>
+        <div class="cuadro">
+            <table border="0">
+                <tr>
+                    <td>Nombre(s)<span style="color:rgb(227, 18, 18)">*</span>
+                        <br>
+                        <br>
+                        <div style="text-align: center;"><input type="text" id="nombre" name="nombre" minlength="3"
+                                maxlength="15" placeholder="Escribe tu nombre"
+                                style="background-color: #712530; color:whitesmoke; border: 0px; border-radius: 5px; padding:10px; font-family: 'Andale Mono', monospace; width: 650px;"
+                                required>
+                            <div class="error">⚠️ *Nombre fuera del rango permitido*</div>
+                        </div>
+                        <br>
+
+                    </td>
+
+                </tr>
+
+                <tr>
+                    <td>Email<span style="color:rgb(227, 18, 18)">*</span>
+                        <br>
+                        <br>
+                        <div style="text-align: center;"><input type="email" id="correo" name="correo"
+                                placeholder="ejemplo@correo.com"
+                                style="background-color: #712530; color:whitesmoke; border: 0px; border-radius: 5px; padding:10px; font-family: 'Andale Mono', monospace; width: 650px;"
+                                required>
+                            <div class="error">⚠️ *No tiene formato de correo*</div>
+                        </div>
+                        <br>
+
+                    </td>
+
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <div style="display: flex; gap: 29px;">
+                            <div>
+                                Edad<span style="color:rgb(227, 18, 18)">*</span><br><br>
+                                <input type="number" id="edad" name="edad" min="12" max="40"
+                                    style="width: 300px; background-color: #712530; color: whitesmoke; border: 0; border-radius: 5px; padding: 10px; font-family: 'Andale Mono', monospace; margin-left: 12px;">
+                                <div class="error">⚠️ *Edad fuera del rango permitido**</div>
+                            </div>
+                            <div>
+                                Nickname<span style="color:rgb(227, 18, 18)">*</span><br><br>
+                                <input type="text" id="nickname" name="nickname" placeholder="Escribe tu nickname"
+                                    pattern="[A-Za-z]+"
+                                    style="width: 300px; background-color: #712530; color: whitesmoke; border: 0; border-radius: 5px; padding: 10px; font-family: 'Andale Mono', monospace;"
+                                    required>
+                                <div class="error">⚠️ *Fuera del rango o formato permitido*</div>
+                            </div>
+                        </div>
+                        <br>
+                    </td>
+
+                </tr>
+                <tr>
+                    <td>Categoria<span style="color:rgb(227, 18, 18)">*</span>
+                        <br>
+                        <br>
+                        <div style="text-align: center;"><input type="radio" id="principiante" name="categoria"
+                                value="principiante"
+                                style="width: 20px;height: 20px;accent-color: #712530; padding:10px; vertical-align: middle;">
+                            <label for="principiante"
+                                style="vertical-align: bottom; padding-right: 100px;">Principiante</label>
+
+                            <input type="radio" id="intermedio" name="categoria" value="intermedio"
+                                style="width: 20px;height: 20px;accent-color: #712530; padding:10px; vertical-align: middle;">
+                            <label for="intermedio"
+                                style="vertical-align: bottom; padding-right: 100px;">Intermedio</label>
+
+                            <input type="radio" id="experto" name="categoria" value="experto"
+                                style="width: 20px;height: 20px;accent-color: #712530; padding:10px; vertical-align: middle;">
+                            <label for="experto" style="vertical-align: bottom;">Experto</label>
+                        </div>
+
+                        <br>
+
+                    </td>
+
+                </tr>
+                <tr>
+                    <td>Juegos Favoritos<span style="color:rgb(227, 18, 18)">*</span>
+                        <br>
+                        <br>
+                        <div style="text-align: center;"><input type="checkbox" id="mariocart" name="intereses"
+                                value="mariocart"
+                                style="width: 15px;height: 15px;accent-color: #712530; padding:10px; vertical-align: middle;">
+                            <label for="mariocart">Mario Cart</label>
+                            <input type="checkbox" id="lol" name="intereses" value="lol"
+                                style="width: 15px;height: 15px;accent-color: #712530; padding:10px; vertical-align: middle;">
+                            <label for="lol">LoL</label>
+                            <input type="checkbox" id="smash" name="intereses" value="smash"
+                                style="width: 15px;height: 15px;accent-color: #712530; padding:10px; vertical-align: middle;">
+                            <label for="smash">Smash Bros</label>
+                            <input type="checkbox" id="fortnite" name="intereses" value="fortnite"
+                                style="width: 15px;height: 15px;accent-color: #712530; padding:10px; vertical-align: middle;">
+                            <label for="fortnite">Fortnite</label>
+                            <input type="checkbox" id="fifa" name="intereses" value="fifa"
+                                style="width: 15px;height: 15px;accent-color: #712530; padding:10px; vertical-align: middle;">
+                            <label for="fifa">FIFA</label>
+                            <input type="checkbox" id="minecraft" name="intereses" value="minecraft"
+                                style="width: 15px;height: 15px;accent-color: #712530; padding:10px; vertical-align: middle;">
+                            <label for="minecraft">Minecraft</label>
+                        </div>
+                        <br><br>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="fecha">Fecha de Registro:</label>
+                        <input type="date" id="fecha" name="fecha" min="2025-08-31" max="2025-12-31" required>
+                        <br><br>
+                    </td>
+                </tr>
+
+
+            </table>
+            <input type="submit" value="Enviar" class="enviarcuadrado">
+            <br>
+            <input type="reset" value="Restablecer" class="restablecercuadrado">
+        </div>
+    </div>
+</body>
+
+</html>

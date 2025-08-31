@@ -1,0 +1,79 @@
+h1 {
+    font-weight: bold;
+    font-family: Impact, 'Courier New';
+    letter-spacing: 3px;
+    font-size: 80px;
+    color: #C46472;
+    text-align: center;
+}
+
+p {
+    font-weight: lighter;
+    font-family: 'Andale Mono', monospace;
+    color: #A6D2DA;
+    text-align: center;
+}
+
+input::placeholder {
+    color: whitesmoke;
+    opacity: 1;
+}
+
+.cuadro {
+    width: 700px;
+    display: flex;
+    flex-direction: column;
+    background-color: #A6D2DA;
+    opacity: 90%;
+    border-radius: 10px;
+    padding: 20px;
+    gap: 10px;
+    margin: 20px auto;
+    border: 3px solid#400810;
+
+}
+
+.cuadro td {
+    font-weight: lighter;
+    font-family: 'Andale Mono', monospace;
+    color: #400810;
+    text-align: left;
+}
+
+.enviarcuadrado {
+    background-color: #400810;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    width: 500px;
+    align-self: center;
+    font-family: 'Andale Mono', monospace;
+    border-radius: 5px;
+    padding: 10px;
+    border: none;
+}
+.restablecercuadrado {
+    background-color: grey;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    width: 500px;
+    align-self: center;
+    font-family: 'Andale Mono', monospace;
+    border-radius: 5px;
+    padding: 5px;
+    border: none;
+}
+
+.error {
+    color: rgb(192, 25, 25);
+    font-size: 13px;
+    font-family: 'Andale Mono', monospace;
+    display: none;
+    text-align: center;
+    padding-top: 10px;
+}
+
+input:invalid:not(:placeholder-shown) + .error {
+    display: block;
+}
